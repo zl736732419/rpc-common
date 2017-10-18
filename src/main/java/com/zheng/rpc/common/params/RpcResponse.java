@@ -13,7 +13,7 @@ public class RpcResponse implements Serializable {
     private Throwable error;
     
     public boolean isError() {
-        return !Optional.ofNullable(error).isPresent();
+        return Optional.ofNullable(error).isPresent();
     }
 
     public String getRequestId() {
