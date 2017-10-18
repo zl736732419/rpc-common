@@ -63,8 +63,6 @@ public class ZkUtil {
 
     /**
      * 创建父节点
-     *
-     * @throws Exception
      */
     public static void createParentNode(ZooKeeper zk) {
         String node = ZkConstants.PARENT_NODE;
